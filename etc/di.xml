@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\TwoFactorAuth\Model\TfaSession">
+        <plugin name="CIM_User2FADisable_Plugin_Magento_TwoFactorAuth_Model_TfaSession"
+                type="CIM\User2FADisable\Plugin\Magento\TwoFactorAuth\Model\TfaSession" sortOrder="10"
+                disabled="false"/>
+    </type>
+    <type name="Magento\TwoFactorAuth\Model\AdminAccessTokenService">
+        <plugin name="CIM_User2FADisable_Plugin_Magento_TwoFactorAuth_Model_AdminAccessTokenService"
+                type="CIM\User2FADisable\Plugin\Magento\TwoFactorAuth\Model\AdminAccessTokenService" sortOrder="10"
+                disabled="false"/>
+    </type>
+</config>
